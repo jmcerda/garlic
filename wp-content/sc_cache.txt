@@ -1,0 +1,1 @@
+O:15:"SubscriberStats":4:{s:7:"twitter";i:1064;s:3:"rss";N;s:8:"facebook";i:27108;s:8:"services";a:6:{s:18:"facebookFanPageURL";s:38:"http://www.facebook.com/garlicfestival";s:13:"feedBurnerURL";s:0:"";s:11:"twitterName";s:15:"GilroyGarlicFes";s:3:"rss";N;s:7:"twitter";N;s:8:"facebook";i:27108;}}

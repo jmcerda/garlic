@@ -1,0 +1,18 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^index\.php$ - [L]
+
+
+# Redirect bad link from social media post 3-18-2016
+Redirect /festival/great-garlic-cook-off/official-rules-great-garlic-recipe-contest-and-cook-off/ http://gilroygarlicfestival.com/festival/cooking-events/great-garlic-cook-off/official-rules-great-garlic-recipe-contest-and-cook-off/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+</IfModule>
+
+# END WordPress
