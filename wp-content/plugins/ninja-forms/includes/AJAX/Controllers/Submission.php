@@ -79,6 +79,7 @@ class NF_AJAX_Controllers_Submission extends NF_Abstracts_Controller
     {
         // Init Field Merge Tags.
         $field_merge_tags = Ninja_Forms()->merge_tags[ 'fields' ];
+        $field_merge_tags->set_form_id( $this->_form_id );
 
         // Init Calc Merge Tags.
         $calcs_merge_tags = Ninja_Forms()->merge_tags[ 'calcs' ];
@@ -91,7 +92,7 @@ class NF_AJAX_Controllers_Submission extends NF_Abstracts_Controller
 
         $this->_data[ 'form_id' ] = $this->_form_data[ 'form_id' ] = $this->_form_id;
         $this->_data[ 'settings' ] = $form_settings;
-        $this->_data[ 'settings' ][ 'is_preview' ];
+        $this->_data[ 'settings' ][ 'is_preview' ] = $this->is_preview();
         $this->_data[ 'extra' ] = $this->_form_data[ 'extra' ];
 
         /*
@@ -110,6 +111,7 @@ class NF_AJAX_Controllers_Submission extends NF_Abstracts_Controller
          * For performance reasons, this should be the only time that the fields array is traversed.
          * Anything needing to loop through fields should integrate here.
          */
+         $validate_fields = apply_filters( 'ninja_forms_validate_fields', true, $this->_data );
         foreach( $form_fields as $key => $field ){
 
             if( is_object( $field ) ) {
@@ -155,7 +157,9 @@ class NF_AJAX_Controllers_Submission extends NF_Abstracts_Controller
             $field = array_merge( $field, $field[ 'settings' ] );
 
             /** Validate the Field */
-            $this->validate_field( $field );
+            if( $validate_fields ){
+                $this->validate_field( $field );
+            }
 
             /** Process the Field */
             $this->process_field( $field );
@@ -270,7 +274,7 @@ class NF_AJAX_Controllers_Submission extends NF_Abstracts_Controller
             if( ! method_exists( $action_class, 'process' ) ) continue;
 
             if( $data = $action_class->process($action[ 'settings' ], $this->_form_id, $this->_data ) ){
-                $this->_data = $data;
+                $this->_data = apply_filters( 'ninja_forms_post_run_action_type_' . $action[ 'settings' ][ 'type' ], $data );
             }
 
 //            $this->_data[ 'actions' ][ $type ][] = $action;
@@ -363,7 +367,13 @@ class NF_AJAX_Controllers_Submission extends NF_Abstracts_Controller
     {
         $error = error_get_last();
         if( $error !== NULL && in_array( $error[ 'type' ], array( E_ERROR, E_CORE_ERROR, E_COMPILE_ERROR, E_USER_ERROR ) ) ) {
+
             $this->_errors[ 'form' ][ 'last' ] = __( 'The server encountered an error during processing.', 'ninja-forms' );
+
+            if( current_user_can( 'manage_options' ) && isset( $error[ 'message' ] ) ){
+                $this->_errors[ 'form' ][ 'last_admin' ] = '<pre>' . $error[ 'message' ] . '</pre>';
+            }
+
             $this->_errors[ 'last' ] = $error;
             $this->_respond();
         }
