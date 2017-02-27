@@ -57,5 +57,8 @@ Thumbs.db
 
 # php Storm #
 #############
-
 .idea*
+
+# Development #
+#############
+node_modules
