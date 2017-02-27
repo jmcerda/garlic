@@ -12,3 +12,16 @@
 /* ----------------------------------------
 	Please, You may put custom CSS here
 ---------------------------------------- */
+.search-form__h #search-header .search-form_it {
+    width:180px;
+    /*background:#54bac1;*/
+    /*border-radius:10px;*/
+    /*padding-right:40px;*/
+    /*border:none;*/
+    /*height:39px;*/
+    /*color:#ffffff;*/
+    /*box-shadow:inset 1px 1px 0 #4da9af;*/
+    /*-webkit-box-sizing:border-box;*/
+    /*-moz-box-sizing:border-box;*/
+    /*box-sizing:border-box;*/
+}
