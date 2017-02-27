@@ -13,7 +13,7 @@
 	Please, You may put custom CSS here
 ---------------------------------------- */
 .search-form__h #search-header .search-form_it {
-    width:180px;
+    width:180px !important;
     /*background:#54bac1;*/
     /*border-radius:10px;*/
     /*padding-right:40px;*/
