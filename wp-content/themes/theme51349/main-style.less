@@ -2,10 +2,19 @@
 @import url("../CherryFramework/style.css");
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 
+@import "bootstrap/less/variables.less";
+@import "bootstrap/less/mixins.less";
+
+
 /* #General
 ================================================== */
 .main-holder {
+/*
 	background: #FFFFFF url(images/bg-top-content.jpg) no-repeat 50% 0;
+	*/
+	background: none;
+
+	
 
 	.home & {
 		overflow: hidden;
@@ -17,7 +26,10 @@
 			position: absolute;
 			width: 100%;
 			height: 100%;
+			/*
 			background: url(images/bg-top.jpg) no-repeat 50% 0;
+			*/
+			background: none;
 			top: 0;
 			left: 0;
 			z-index: 2;
@@ -27,7 +39,10 @@
 			position: absolute;
 			width: 100%;
 			height: 100%;
+			/*
 			background: url(images/top-shadow.png) repeat-x;
+			*/
+			background: none;
 			top: 0;
 			left: 0;
 			z-index: 3;
@@ -219,7 +234,7 @@ input[type="color"],
 					.transition;
 				}
 				&:hover {
-					background: #005f7f;
+					background: #66d1d8;
 
 					img {
 						.rotateY(360deg);
@@ -296,7 +311,7 @@ input[type="color"],
 			border: none;
 			padding: 0;
 			margin: 0;
-			width: 160px;
+			width: 120px;
 			background: none;
 			border-left: 1px solid #91e5e9;
 			border-right: 1px solid #37bdc6;
@@ -526,7 +541,8 @@ input[type="color"],
 		margin: 16px 20px 0;
 
 		.search-form_it {
-			width: 242px;
+			/*width: 242px;*/
+			width: 170px;
 			background: #54bac1;
 			border-radius: 10px;
 			padding-right: 40px;
@@ -1919,22 +1935,22 @@ div.type-page {
 }
 
 .banner-wrap {
-	background: #005F7F;
-	/*#gradient > .vertical(#7ed7dd, #5db6bc);*/
+	background: #7ed7dd;
+	#gradient > .vertical(#7ed7dd, #5db6bc);
 	margin-bottom: 55px;
 
 	&.color_2 {
-		background: #005F7F;
-		/*#gradient > .vertical(#7eddc1, #5ebca0);*/
+		background: #7eddc1;
+		#gradient > .vertical(#7eddc1, #5ebca0);
 
 		h5 {
-			background: #005F7F;
-			/*#gradient > .vertical(#7eddc1, #5ebca0);*/
+			background: #7eddc1;
+			#gradient > .vertical(#7eddc1, #5ebca0);
 		}
 
 		.link-align {
 			.btn {
-				color: #005F7F;
+				color: #5ed4b1;
 			}
 		}
 
@@ -1942,41 +1958,41 @@ div.type-page {
 
 	&.color_3 {
 		background: #414142;
-		/* #gradient > .vertical(#e1c96f, #c0a84e); */
+		#gradient > .vertical(#e1c96f, #c0a84e);
 
 		h5 {
 			background: #414142;
-			/* #gradient > .vertical(#e1c96f, #c0a84e); */
+			#gradient > .vertical(#e1c96f, #c0a84e);
 		}
 
 		.link-align {
 			.btn {
-				color: #414142;
+				color: #d9bb4b;
 			}
 		}
 
 	}
 
 	&.color_4 {
-		background: #ff9e16;
-		/*#gradient > .vertical(#d685a2, #b56481);*/
+		background: #d685a2;
+		#gradient > .vertical(#d685a2, #b56481);
 
 		h5 {
-			background: #ff9e16;
-			/*#gradient > .vertical(#d685a2, #b56481);*/
+			background: #d685a2;
+			#gradient > .vertical(#d685a2, #b56481);
 		}
 
 		.link-align {
 			.btn {
-				color: #ff9e16;
+				color: #cc668b;
 			}
 		}
 
 	}
 
 	h5 {
-		background: #005F7F;
-		/*#gradient > .vertical(#7ed7dd, #5db6bc);*/
+		background: #7ed7dd;
+		#gradient > .vertical(#7ed7dd, #5db6bc);
 		margin: 0;
 		padding: 18px 32px;
 		color: #FFF;
@@ -2040,7 +2056,7 @@ div.type-page {
 			background: #ffffff;
 			box-shadow: none;
 			padding: 10px 24px;
-			color: #005F7F;
+			color: #5ecdd4;
 
 			&:focus, &:hover {
 				background: #30373f; /* Old browsers */
@@ -2434,6 +2450,7 @@ blockquote p {
 }
 /*/ Misc */
 
-
+/*
 @import "bootstrap/less/variables.less";
 @import "bootstrap/less/mixins.less";
+*/
