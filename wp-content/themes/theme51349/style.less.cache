@@ -1,4 +1,4 @@
-a:4:{s:4:"root";s:91:"/srv/bindings/6c55aca1241848b9b03616f3dc27f912/code/wp-content/themes/theme51349/style.less";s:8:"compiled";s:54186:"@import url("../CherryFramework/style.css");
+a:4:{s:4:"root";s:91:"/srv/bindings/6c55aca1241848b9b03616f3dc27f912/code/wp-content/themes/theme51349/style.less";s:8:"compiled";s:54193:"@import url("../CherryFramework/style.css");
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 .main-holder { background:#FFFFFF url(images/bg-top-content.jpg) no-repeat 50% 0; }
 .home .main-holder {
@@ -11,7 +11,7 @@ a:4:{s:4:"root";s:91:"/srv/bindings/6c55aca1241848b9b03616f3dc27f912/code/wp-con
 	position:absolute;
 	width:100%;
 	height:100%;
-	background:url(images/bg-top.jpg) no-repeat 50% 0;
+	background:url(images/gilroy_garlic.jpg) no-repeat 50% 0;
 	top:0;
 	left:0;
 	z-index:2;
@@ -1844,4 +1844,4 @@ blockquote p { line-height:22px; }
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 }
-";s:5:"files";a:3:{s:91:"/srv/bindings/6c55aca1241848b9b03616f3dc27f912/code/wp-content/themes/theme51349/style.less";i:1488327171;s:110:"/srv/bindings/6c55aca1241848b9b03616f3dc27f912/code/wp-content/themes/theme51349/bootstrap/less/variables.less";i:1488343129;s:107:"/srv/bindings/6c55aca1241848b9b03616f3dc27f912/code/wp-content/themes/theme51349/bootstrap/less/mixins.less";i:1488327171;}s:7:"updated";i:1488345656;}
+";s:5:"files";a:3:{s:91:"/srv/bindings/6c55aca1241848b9b03616f3dc27f912/code/wp-content/themes/theme51349/style.less";i:1488347246;s:110:"/srv/bindings/6c55aca1241848b9b03616f3dc27f912/code/wp-content/themes/theme51349/bootstrap/less/variables.less";i:1488343129;s:107:"/srv/bindings/6c55aca1241848b9b03616f3dc27f912/code/wp-content/themes/theme51349/bootstrap/less/mixins.less";i:1488327171;}s:7:"updated";i:1488347256;}

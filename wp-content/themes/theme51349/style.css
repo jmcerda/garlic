@@ -20,3 +20,7 @@
 .search-form__h #search-header .search-form_it {
     width:170px !important;
 }
+
+.es-carousel .desc {
+    display: none;
+}
