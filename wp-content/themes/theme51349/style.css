@@ -13,9 +13,9 @@
 	Please, You may put custom CSS here
 ---------------------------------------- */
 
-.nav__primary .sf-menu >li {
-    width: 120px !important;
-}
+/*.nav__primary .sf-menu >li {*/
+    /*width: 120px;*/
+/*}*/
 
 .search-form__h #search-header .search-form_it {
     width:170px !important;
