@@ -103,7 +103,7 @@
 					echo "'>";
 					if ($caption) { ?>
 						<div class="camera_caption <?php echo $banner_animation;?>">
-							<?php echo stripslashes(htmlspecialchars_decode($caption)); ?>
+							<h2><?php echo stripslashes(htmlspecialchars_decode($caption)); ?></h2>
 						</div>
 					<?php }
 				} else {
@@ -114,7 +114,7 @@
 					echo "'>";
 					if ($caption) { ?>
 						<div class="camera_caption <?php echo $banner_animation;?>">
-							<?php echo stripslashes(htmlspecialchars_decode($caption)); ?>
+							<h2><?php echo stripslashes(htmlspecialchars_decode($caption)); ?></h2>
 						</div>
 					<?php }
 				}
