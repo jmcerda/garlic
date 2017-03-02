@@ -72,7 +72,7 @@ function deal_or_announcement_with_countdown_timer_show()
         <?php if(get_option('deal_or_announcement_with_countdown_timer_caption')<>"") { ?>
         <div align="<?php echo get_option('deal_or_announcement_with_countdown_timer_timer_align'); ?>" style="padding:10px 0px 3px 0px;color:<?php echo get_option('deal_or_announcement_with_countdown_timer_timer_color')?>"><?php echo get_option('deal_or_announcement_with_countdown_timer_caption'); ?></div>
         <?php } ?>
-        <div class="announcementtime" id="announcementtime" style="padding:0px 0px 10px 0px;" align="<?php echo get_option('deal_or_announcement_with_countdown_timer_timer_align'); ?>"> 
+        <div class="announcementtime" id="announcementtime" style="padding:20px 0px 10px 0px;" align="<?php echo get_option('deal_or_announcement_with_countdown_timer_timer_align'); ?>"> 
           <script language="JavaScript" src="<?php echo WP_deal_PLUGIN_URL; ?>/gCountdown.js"></script> 
         </div>
         <?php
