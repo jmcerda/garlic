@@ -113,9 +113,10 @@ if ( !function_exists('shortcode_carousel') ) {
 									$attachment_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), 'full' );
 									$url            = $attachment_url['0'];
 									$image          = aq_resize($url, $thumb_width, $thumb_height, true);
+									$sponsor_url    = get_field('external_link');
 
 									$output .= '<figure class="featured-thumbnail">';
-										$output .= '<a href="' . $post_permalink . '" title="' . $post_title . '">';
+										$output .= '<a href="' . $sponsor_url . '" title="' . $post_title . '">';
 											$output .= '<img src="' . $image . '" alt="' . $post_title . '" />';
 										$output .= '</a>';
 									$output .= '</figure>';
