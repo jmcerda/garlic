@@ -126,7 +126,7 @@ if ( !function_exists('shortcode_carousel_owl') ) {
 								$image          = aq_resize($url, $thumb_width, $thumb_height, true);
 
 								$output .= '<figure>';
-									$output .= '<a href="' . $post_permalink . '" title="' . $post_title . '">';
+									$output .= '<a href="' . $post_permalink . '" title="' . $post_title . '" target="new"  onclick="trackOutboundLink(this, "sponsor links", "' . $post_title . '"); return false;">';
 										$output .= '<img src="' . $image . '" alt="' . $post_title . '" />';
 									$output .= '</a>';
 								$output .= '</figure>';
@@ -179,11 +179,11 @@ if ( !function_exists('shortcode_carousel_owl') ) {
 							}
 
 							// post title
-							if ( !empty($post_title{0}) ) {
+							/*if ( !empty($post_title{0}) ) {
 								$output .= '<h5><a href="' . $post_permalink . '" title="' . $post_title_attr . '">';
 									$output .= $post_title;
 								$output .= '</a></h5>';
-							}
+							}*/
 
 							// post excerpt
 							if ( !empty($excerpt{0}) ) {

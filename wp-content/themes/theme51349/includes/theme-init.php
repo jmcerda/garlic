@@ -175,6 +175,7 @@ function phi_post_type_faq() {
 				'menu_position'       => 5,
 				'publicly_queryable'  => true,
 				'exclude_from_search' => false,
+				'order'				  => desc,
 				)
 		);
 }

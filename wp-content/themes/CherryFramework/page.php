@@ -19,6 +19,8 @@
 				</div>
 			</div>
 		</div>
+<?php echo do_shortcode('[carousel_owl title="Sponsors" post_type="blog" categories="sponsors" posts_count="21" visibility_items="5" thumb="yes" date="no" author="no" comments="no" auto_play="5000" display_navs="yes" display_pagination="no"]'); ?>
+
 	</div>
 </div>
 

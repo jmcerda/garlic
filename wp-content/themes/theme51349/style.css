@@ -12,11 +12,144 @@
 /* ----------------------------------------
 	Please, You may put custom CSS here
 ---------------------------------------- */
-
-/*.nav__primary .sf-menu >li {*/
-    /*width: 120px;*/
-/*}*/
-
+a {
+	color: #4092ad;
+}
+#slider-wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+	width: 100%;
+}
 .es-carousel .desc {
     display: none;
+}
+.search-form__h #search-header .search-form_it {
+    background: #999999 !important;
+}
+#header_ticket_button {
+    text-align: right;
+margin-top: 5px;
+}
+#footer_ticket_button {
+margin-top: 5px;
+}
+#homepage_spacer {
+margin-bottom: 10%;
+}
+#content img {
+width: 100%;
+}
+.sponsors_list {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	flex-direction: row;
+	list-style: none;
+	padding: 40px 0px;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin:0px;
+}
+.sponsors_list li:first-child {
+	width: 100%;
+	text-align: center;
+	padding-top: 0px;
+}
+.sponsors_list li:first-child img {
+	width: 50%;
+}
+.sponsors_list li img {
+	width: 50%;
+}
+.sponsors_list li {
+    padding:20px;
+}
+.textwidget {
+    color: #d9bb4b !important;
+}
+.footer_right_left {
+margin-left: 0px;
+}
+.footer_right_right {
+margin-left: 40px;
+}
+.camera_caption {
+top: 45px !important;
+}
+.camera_caption >div h2 {
+text-shadow: 2px 3px 8px #000;
+}
+.sfHover {
+background: #303030 !important;
+}
+.menu-item-has-children.sfHover>a {
+color: #ff9e16 !important;
+}
+.sfHover >a:hover  {
+color: #ff9e16 !important;
+}
+.nav__primary .sf-menu >li >.sub-menu {
+background: #303030 !important;
+}
+.menu-item>a:hover {
+color: #ff9e16 !important;
+}
+.nav__primary .sf-menu >li >.sub-menu >.menu-item >.sub-menu {
+background: #303030 !important;
+}
+.nav__primary .sf-menu >li >.sub-menu >.menu-item.current-menu-item a {
+color: #E2E71F !important;
+}
+.current_page_item a {
+color: #E2E71F !important;
+}
+.sf-menu li li {
+    background: #303030 !important;
+    padding: 5px 20px;
+}
+.sf-menu li li:first-child {
+    padding-top: 20px;
+}
+.sf-menu li li:last-child {
+    padding-bottom: 20px;
+}
+.title-section .breadcrumb a {
+    color: #ff9e16 !important;
+}
+.single #content .share-buttons .pinterest img {
+    width:auto;
+}
+@media (max-width: 1200px) {
+#homepage_spacer {
+    margin-bottom: 20%;
+}
+}
+@media (max-width: 979px) {
+#homepage_spacer {
+margin-bottom: 33%;
+}
+}
+@media (max-width: 768px) {
+#slider-wrapper  {
+	max-width: 724px;
+}
+.sponsors_list li:first-child img {
+	width: 85%;
+}
+.footer_right_left, .footer_right_right, .footer_right_right > div {
+text-align: center;
+margin-left: 0px;
+}
+.camerarelative {
+background: none !important; 
+}
+}
+@media (max-width: 767px) {
+#footer_ticket_button {
+    text-align: center;
+}
+}
+@media (max-width: 766px) {
+#homepage_spacer {
+margin-bottom: 0px;
 }

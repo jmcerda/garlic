@@ -32,9 +32,9 @@
 					cols                : <?php echo of_get_option('sl_columns'); ?>,
 					easing              : 'easeOutQuad',  //for the complete list http://jqueryui.com/demos/effect/easing.html
 					mobileEasing        : '',   //leave empty if you want to display the same easing on mobile devices and on desktop etc.
-					fx                  : '<?php echo of_get_option('sl_effect'); ?>',    //'random','simpleFade', 'curtainTopLeft', 'curtainTopRight', 'curtainBottomLeft',          'curtainBottomRight', 'curtainSliceLeft', 'curtainSliceRight', 'blindCurtainTopLeft', 'blindCurtainTopRight', 'blindCurtainBottomLeft', 'blindCurtainBottomRight', 'blindCurtainSliceBottom', 'blindCurtainSliceTop', 'stampede', 'mosaic', 'mosaicReverse', 'mosaicRandom', 'mosaicSpiral', 'mosaicSpiralReverse', 'topLeftBottomRight', 'bottomRightTopLeft', 'bottomLeftTopRight', 'bottomLeftTopRight'
+					//fx                  : '',    //'<?php echo of_get_option('sl_effect'); ?>''random','simpleFade', 'curtainTopLeft', 'curtainTopRight', 'curtainBottomLeft',          'curtainBottomRight', 'curtainSliceLeft', 'curtainSliceRight', 'blindCurtainTopLeft', 'blindCurtainTopRight', 'blindCurtainBottomLeft', 'blindCurtainBottomRight', 'blindCurtainSliceBottom', 'blindCurtainSliceTop', 'stampede', 'mosaic', 'mosaicReverse', 'mosaicRandom', 'mosaicSpiral', 'mosaicSpiralReverse', 'topLeftBottomRight', 'bottomRightTopLeft', 'bottomLeftTopRight', 'bottomLeftTopRight'
 													//you can also use more than one effect, just separate them with commas: 'simpleFade, scrollRight, scrollBottom'
-					mobileFx            : '',   //leave empty if you want to display the same effect on mobile devices and on desktop etc.
+					//mobileFx            : '',   //leave empty if you want to display the same effect on mobile devices and on desktop etc.
 					gridDifference      : 250,  //to make the grid blocks slower than the slices, this value must be smaller than transPeriod
 					height              : '37.61%', //here you can type pixels (for instance '300px'), a percentage (relative to the width of the slideshow, for instance '50%') or 'auto'
 					imagePath           : 'images/',    //he path to the image folder (it serves for the blank.gif, when you want to display videos)

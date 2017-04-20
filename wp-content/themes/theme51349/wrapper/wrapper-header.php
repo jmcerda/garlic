@@ -5,6 +5,7 @@
 	</div>
 	<div class="span6 social-nets-wrapper" data-motopress-type="static" data-motopress-static-file="static/static-social-networks.php">
 		<?php get_template_part("static/static-social-networks"); ?>
+		<div id="header_ticket_button"><a href="http://gilroygarlicfestival.eventbrite.com/?aff=GFestWebsite" target="new"><img src="/wp-content/uploads/2017/03/custombutton.png"></a></div>
 	</div>
 </div>
 <div class="row">

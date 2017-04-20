@@ -980,7 +980,7 @@
 			'search_form' => __('or use the search form below.', $domain),
 
 			//loop-faq.php
-			'q' => __('Q?', $domain),
+			'q' => __('Q.', $domain),
 			'a' => __('A.', $domain),
 
 			//loop-single.php
