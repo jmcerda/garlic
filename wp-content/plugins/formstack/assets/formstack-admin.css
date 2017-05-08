@@ -1,0 +1,25 @@
+.formstack th {
+	width: 75px;
+}
+.formstack input[name="formstack_api_key"] {
+	width: 300px;
+}
+.formstack-status {
+	border-top: 1px dotted gray;
+	padding-top: 20px;
+}
+.formstack .error strong {
+	color: red;
+}
+.widget-api-error,
+.formstack-api-error,
+.formstack-empty-api {
+	background-color: #FFFFE0;
+	border: 1px solid #E6DB55;
+	border-radius: 3px;
+	padding: 4px;
+}
+#formstack_iframe {
+	min-height: 600px;
+	width: 95%;
+}
