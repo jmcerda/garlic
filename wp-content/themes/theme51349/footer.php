@@ -28,7 +28,7 @@
 			} catch(err){}
 			 
 			setTimeout(function() {
-			document.location.href = link.href;
+			window.open(link.href);
 			}, 100);
 		}
 		</script>
