@@ -2,6 +2,7 @@
 	
 	require_once('theme_shortcodes/posts_grid.php');
 	require_once('theme_shortcodes/banner.php');
+	require_once('theme_shortcodes/carousel-owl.php');
 
 	// Loading child theme textdomain
 	load_child_theme_textdomain( CURRENT_THEME, get_stylesheet_directory() . '/languages' );

@@ -19,20 +19,17 @@
 			<?php echo stripslashes(of_get_option('ga_code')); ?>
 		</script>
 		<script>
-		ga('create', 'UA-42092269-1', 'gilroygarlicfestival.com');
-		ga('send', 'pageview');
-		function trackOutboundLink(link, category, action) { 
-		 
-			try { 
-				_gaq.push(['_trackEvent', category , action]); 
-			} catch(err){}
+			function trackOutboundLink(link, category, action) { 
 			 
-			setTimeout(function() {
-			window.open(link.href);
-			}, 100);
-		}
+				try { 
+					_gaq.push(['_trackEvent', category , action]); 
+				} catch(err){}
+				 
+				setTimeout(function() {
+					window.open(link.href);
+				}, 100);
+			}
 		</script>
-
 		<!-- Show Google Analytics -->
 	<?php } ?>
 	<?php wp_footer(); ?> <!-- this is used by many Wordpress features and for plugins to work properly -->
